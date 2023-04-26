@@ -27,20 +27,20 @@ it helps developers to manage and automate smart contracts development
 
 	 
 ## Hardhat Network
-	Hardhat comes with a local ethereum blockchain with EVM called Hardhat Network. You can run Hardhat Network in two modes
+Hardhat comes with a local ethereum blockchain with EVM called Hardhat Network. You can run Hardhat Network in two modes
 	
-	-In-process:
+	<b>In-process</b>:
 	 local blockchain, an ephemeral ethereum network that is created and destroyed with the process;
-	-Stand-alone:
+	<b>Stand-alone</b>:
 	local blockchain, serving JSON-RPC and WebSocket requests. You can start it by running
-	```yarn hardhat node
-	``` npm hardhat node
+	yarn hardhat node <br/>
+	npm hardhat node
 	
 	Instead of Hardhat Network, Hardhat can also be used with Ganache, the most known ethereum local blockchain testnet for developers. 
 	The Ethereum Virtual Machines (EVMs) in Hardhat Network, Ganache and Remix IDE are all based on @ethereumjs/vm EVM implementation.
 
 	Hardhat can also fork mainnet which means "copy the state of the Ethereum mainnet into your local testnet including all balances and deployed contracts".
-	Find more information [here](https://hardhat.org/hardhat-network/guides/mainnet-forking.html).
+[Find more information here](https://hardhat.org/hardhat-network/guides/mainnet-forking.html).
 
 ## Debugging-first:
 	The first reason why many developers choose Hardhat over Truffle Suite is console.log(). 
