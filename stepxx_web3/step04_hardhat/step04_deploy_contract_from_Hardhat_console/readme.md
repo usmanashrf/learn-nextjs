@@ -4,24 +4,31 @@ To open Hardhat console connecting to localhost blockchain at
 http://127.0.0.1:8545/
 
 run:
+
 	yarn hardhat console --network localhost
 
 Before interact with terminal you need to install following library
+
 	npm install --save-dev @nomiclabs/hardhat-ethers 'ethers@^5.0.0'
 
 In Hardhat console, you can interact with smart contract using Ethers.js. What we use here is the plugin version: [hardhat-ethers](https://hardhat.org/hardhat-runner/plugins/nomiclabs-hardhat-ethers).
 open first terminal run 
+
 	yarn hardhat node
+	
 open second terminal and run
+
 	yarn hardhat console --network localhost
+	
 In second terminal after running above command then run following commands
+
 	const address = '0x5FbDB2315678afecb367f032d93F642f64180aa3';
 	const contract = await ethers.getContractAt("Lock", address);
-
 	//call withdraw
 	await contract.withdraw()
 
 And you will get following response
+
 	{
 	hash: '0x1096b359d3c654378c1c5b07b91f956ec4bb098053735ed6cb8a8eeff16774ad',     
 	type: 2,
