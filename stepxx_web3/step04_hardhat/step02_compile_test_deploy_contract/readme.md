@@ -2,7 +2,7 @@
 In the basic sample project, there is already a sample smart contract Lock.sol 
 in contracts directory as well as unit test script Lock.ts and deploy script deploy.ts for it.
 
-Before compilation if you created project in typescript then you need to install below libraries
+Before compilation if you created project in typescript then you need to install below libraries<br/>
 npm install --save-dev typescript <br/>
 npm install --save-dev ts-node<br/>
 npm install --save-dev @nomicfoundation/hardhat-toolbox
