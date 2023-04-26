@@ -1,34 +1,26 @@
-# Install Hardhat and init an (empty) Hardhat Project
-In this section, we go through the process of initiating a hardhat project in 6 steps to give you an overall view of how to use Hardhat. 
+# Compile, Test and Deploy
+In the basic sample project, there is already a sample smart contract Lock.sol 
+in contracts directory as well as unit test script Lock.ts and deploy script deploy.ts for it.
 
-### Step 1: Install Node.js and yarn
+Before compilation if you created project in typescript then you need to install below libraries
+	npm install --save-dev typescript
+	npm install --save-dev ts-node
+	npm install --save-dev @nomicfoundation/hardhat-toolbox
 
-Hardhat is written in JavaScript using Node.js. To use it, we need Node.js and yarn (or npm) installed.
-If needed, you can download and install them from 
-https://nodejs.org/en/
-Once Node.js installed, check its version by running:
-	 
-### Step 2: Prepare directory and install Hardhat
+### Compile :
+	yarn hardhat compile
 
-Make a directory; init a Node.js project with yarn; and install hardhat as devDependencies in this environment.
-	mkdir hardhat-tut && cd hardhat-tut
-	yarn init --yes
-	yarn add hardhat
-	
-Check the hardhat version:
-	yarn hardhat --version
+### Unit Test :
+	yarn hardhat test
 
-### Step 3: Init Hardhat project
-When Hardhat is installed, we use Hardhat Runner CLI to init a sample project. 
-Run the following command and choose "Create an advanced sample project that uses TypeScript".	
-	yarn hardhat
+### Deploy:
+	yarn hardhat run scripts/deploy.ts
+	//Output: 
+	Lock with 0.001ETH and unlock timestamp 1679119583 deployed to 0x5FbDB2315678afecb367f032d93F642f64180aa3
 
-It will init a project and add some dependencies. In the sample project, there are three sub-directories and a configuration file
-Sample smart contract is in the contracts dir, unit test file is in the test dir, and deploy script is in scripts dir.
+	Please note that the Lock smart contract is deployed to the in-process blockchain testnet which is destroyed with the precess.
 	
 ## Other useful study material
 https://hardhat.org/tutorial <br/>
 https://dev.to/yakult/a-concise-hardhat-tutorial-part-1-7eo <br/>
 https://codedamn.com/news/blockchain/hardhat-tutorial-guide
-	
-	
