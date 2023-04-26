@@ -40,7 +40,7 @@ it helps developers to manage and automate smart contracts development
 	The Ethereum Virtual Machines (EVMs) in Hardhat Network, Ganache and Remix IDE are all based on @ethereumjs/vm EVM implementation.
 
 	Hardhat can also fork mainnet which means "copy the state of the Ethereum mainnet into your local testnet including all balances and deployed contracts".
-	Find more information [here] https://hardhat.org/hardhat-network/guides/mainnet-forking.html .
+	Find more information [here](https://hardhat.org/hardhat-network/guides/mainnet-forking.html).
 
 ## Debugging-first:
 	The first reason why many developers choose Hardhat over Truffle Suite is console.log(). 
@@ -50,8 +50,8 @@ it helps developers to manage and automate smart contracts development
 	Hardhat's unit test uses Mocha and Chai currently.
 	
 ## other useful study material
-https://hardhat.org/tutorial
-https://dev.to/yakult/a-concise-hardhat-tutorial-part-1-7eo
+https://hardhat.org/tutorial <br/>
+https://dev.to/yakult/a-concise-hardhat-tutorial-part-1-7eo <br/>
 https://codedamn.com/news/blockchain/hardhat-tutorial-guide
 	
 	
