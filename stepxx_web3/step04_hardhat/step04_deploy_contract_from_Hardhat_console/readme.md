@@ -48,8 +48,6 @@ And you will get following response
 	}
 
 
-
-
 ## Other useful study material
 https://hardhat.org/tutorial <br/>
 https://dev.to/yakult/a-concise-hardhat-tutorial-part-1-7eo <br/>
