@@ -9,9 +9,8 @@ if you want to code in VS code then you need to install Solidity extension for c
 There are various ways to install the Solidity compiler, simply choose your preferred option and follow the steps outlined on the [installation page](https://docs.soliditylang.org/en/v0.8.6/installing-solidity.html#installing-solidity).
 
 
-## Using Hardhat to do code on local machine
-follow below steps
-  
+#### Using Hardhat to do code on local machine follow below steps
+
   npm init -y
   npm install --save-dev hardhat
 
